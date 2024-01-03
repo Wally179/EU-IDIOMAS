@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.background {
+  background-color: var(--Azul-primrio, #14213d);
+  background: url("../../img/textura.png") repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .background {
+    max-width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  min-height: 800px;
+  width: 100%;
+  padding: 18px 20px;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    flex-direction: column;
+  }
+}
+
+.text {
+  gap: 20px;
+  width: 50%;
+  flex-direction: column;
+  padding: 100px 0px 100px 100px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.title {
+  color: #fff;
+  align-self: stretch;
+  font: 800 48px/58px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+
+.description {
+  color: #fff;
+  align-self: stretch;
+  margin-top: 16px;
+  font: 300 20px/24px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+.contact {
+  margin-top: 16px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 12px 24px; /* Tamanho fixo definido pelo padding */
+  background-color: var(--Amarelo, #fca311);
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font: 800 18px/120% "Gilroy", -apple-system, Roboto, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+
+  @media (max-width: 991px) {
+    white-space: initial;
+    padding: 12px 20px; /* Ajuste o padding para telas menores conforme necessário */
+  }
+}
+
+.images {
+  position: relative;
+  padding: 100px 0px 100px 0px;
+  margin-left: 100px;
+  width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+  max-width: 600px; /* Ajuste o valor máximo conforme necessário */
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 10px;
+    gap: 0px;
+  }
+}
+
+.image,
+.image2 {
+  width: 50%;
+  height: auto;
+  display: block; /* Para corrigir espaçamento indesejado no inline-block */
+}
+
+@media (max-width: 991px) {
+  .image,
+  .image2 {
+    margin-top: 40px;
+    width: 50%;
+  }
+}
+
+.image2 {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
