@@ -2,11 +2,7 @@
 import Inicio from "./pages/start";
 
 function App() {
-  return (
-    <div>
-      <Inicio />
-    </div>
-  );
+  return <Inicio />;
 }
 
 export default App;

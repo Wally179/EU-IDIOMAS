@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <a href="/#" className="nav__brand">
-        <img src={logo} alt="Logo" width={150} />
+        <img src={logo} alt="Logo" width={125} />
       </a>
       <ul className={`nav__menu ${isActive ? "nav__active" : ""}`}>
         {["INICIO", "SOBRE NÓS", "AULAS", "TRADUÇÕES", "DEPOIMENTOS"].map(

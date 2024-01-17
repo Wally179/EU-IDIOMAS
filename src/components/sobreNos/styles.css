@@ -1,0 +1,129 @@
+/* styles.css */
+
+.nos-container {
+  background-color: var(--Base, #fdfffc);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  height: 1100px;
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .nos-container {
+    padding: 40px;
+  }
+}
+
+.nos-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nos-section {
+  gap: 20px;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  height: 100%; /* Adiciona altura de 100% para centralizar verticalmente */
+}
+
+@media (max-width: 991px) {
+  .nos-section {
+    align-items: stretch;
+    gap: 0;
+  }
+}
+
+.nos-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .nos-column {
+    width: 100%;
+  }
+}
+
+.nos-title {
+  color: var(--Azul-primrio, #14213d);
+  font-family: Gilroy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 48px */
+}
+
+@media (max-width: 991px) {
+  .nos-title {
+    max-width: 100%;
+  }
+}
+
+.nos-description {
+  margin-top: 24px;
+  color: var(--Cinza-escuro-texto, #171219);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 24px */
+}
+
+@media (max-width: 991px) {
+  .nos-description {
+    max-width: 100%;
+  }
+}
+
+.nos-link {
+  align-items: start;
+  display: flex;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.nos-link-text {
+  color: var(--Amarelo, #fca311);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+}
+
+@media (max-width: 991px) {
+  .nos-link-text {
+    white-space: initial;
+  }
+  .nos-gallery-image {
+    margin-top: 25px;
+  }
+}
+.nos-column-image {
+  display: flex;
+  align-items: center; /* Centralizar horizontalmente */
+}
+
+.nos-gallery {
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+}
+
+.nos-gallery-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}

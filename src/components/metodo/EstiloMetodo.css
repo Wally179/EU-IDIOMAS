@@ -1,0 +1,150 @@
+/* styles.css */
+
+.metodo-container {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Base, #fdfffc);
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+@media (max-width: 991px) {
+  .metodo-container {
+  }
+}
+
+.metodo-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .metodo-content {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.metodo-section {
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .metodo-section {
+    max-width: 100%;
+  }
+}
+
+.metodo-grid {
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .metodo-grid {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0px;
+  }
+}
+
+.metodo-left-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 50%;
+}
+.metodo-right-column {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .metodo-left-column {
+    width: 100%;
+  }
+  .metodo-right-column {
+    width: 100%;
+  }
+}
+
+.metodo-text-container {
+  align-self: stretch;
+  height: 100%;
+  align-self: center;
+}
+
+.metodo-heading {
+  color: var(--Azul-primrio, #14213d);
+  font-family: Gilroy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 48px */
+}
+
+@media (max-width: 991px) {
+  .metodo-heading {
+    max-width: 100%;
+  }
+}
+
+.metodo-description {
+  margin-top: 24px;
+  color: var(--Cinza-escuro-texto, #171219);
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 24px */
+}
+
+@media (max-width: 991px) {
+  .metodo-description {
+    max-width: 100%;
+  }
+}
+
+.metodo-cta {
+  align-items: start;
+  display: flex;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.metodo-cta-text {
+  color: var(--Amarelo, #fca311);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
+  width: fit-content;
+}
+
+@media (max-width: 991px) {
+  .metodo-cta-text {
+    white-space: initial;
+  }
+}
+
+.metodo-cta-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  overflow: hidden;
+  align-self: stretch;
+  max-width: 100%;
+}
+.metodo-image,
+.metodo-image-3 {
+  max-width: 80%;
+}
+.float-right {
+  float: right;
+}
+.space {
+  margin-top: 150px;
+}
