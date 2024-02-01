@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./intro.css";
 
-function Intro() {
+const Intro = forwardRef((props, ref) => {
   return (
-    <div className="containerI">
+    <div className="containerI" ref={ref}>
       <div className="backgroundI">
         <div className="contentI">
           <div className="textI">
@@ -40,6 +40,6 @@ function Intro() {
       </div>
     </div>
   );
-}
+});
 
 export default Intro;

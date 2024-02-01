@@ -2,6 +2,12 @@ import React from "react";
 import "./Pq.css";
 import imagem1 from "../../img/pc.png";
 
+export const scrollToMainContainer = () => {
+  const mainContainer = document.querySelector(".main-containerPQ");
+  if (mainContainer) {
+    mainContainer.scrollIntoView({ behavior: "smooth" });
+  }
+};
 function Pq() {
   return (
     <div className="main-containerPQ">

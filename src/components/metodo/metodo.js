@@ -1,8 +1,37 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import "./EstiloMetodo.css";
+import { Link, useHistory } from "react-router-dom";
+
+export const scrollToTradu = () => {
+  const nosContent = document.querySelector(".traduaqui");
+  if (nosContent) {
+    const offset = -90;
+    const targetPosition =
+      nosContent.getBoundingClientRect().top + window.scrollY + offset;
+
+    window.scroll({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+  }
+};
+
+export const scrollToAula = () => {
+  const mainContainer = document.querySelector(".metodo-container");
+  if (mainContainer) {
+    mainContainer.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 function Metodo() {
+  const history = useHistory();
+  const handleLinkClick = () => {
+    history.push("/traduzir");
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
   return (
     <div className="metodo-container">
       <div className="metodo-content">
@@ -41,11 +70,11 @@ function Metodo() {
             </div>
           </div>
         </div>
-        <div className="metodo-section space">
+        <div className="metodo-section space traduaqui">
           <div className="metodo-grid">
             <div className="metodo-left-column">
               <div className="metodo-text-container">
-                <div className="metodo-heading">Traduções</div>
+                <div className="metodo-heading ">Traduções</div>
                 <div className="metodo-description">
                   Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                   eu turpis molestie, dictum est a, mattis tellus. Sed
@@ -55,14 +84,18 @@ function Metodo() {
                   Class aptent taciti sociosqu ad litora torquent per conubia
                   nostra, per inceptos himenaeos. <br />
                 </div>
-                <div className="metodo-cta">
+                <Link
+                  to="/traduzir"
+                  className="metodo-cta"
+                  onClick={handleLinkClick}
+                >
                   <div className="metodo-cta-text">Saiba mais</div>
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/df1f1a98e7154374d65da57a3becfcb54f3631a7c3b10b36480f82a1820f5959?apiKey=575e1c58e30d4d41a45d500f16151431&"
                     className="metodo-cta-image"
                   />
-                </div>
+                </Link>
               </div>
             </div>
             <div className="metodo-right-column">

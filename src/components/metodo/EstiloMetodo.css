@@ -11,6 +11,7 @@
 
 @media (max-width: 991px) {
   .metodo-container {
+    padding: 40px;
   }
 }
 
@@ -107,7 +108,7 @@
 }
 
 .metodo-cta {
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   margin-top: 24px;
   gap: 8px;
@@ -127,6 +128,10 @@
   .metodo-cta-text {
     white-space: initial;
   }
+  .metodo-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .metodo-cta-image {
@@ -138,12 +143,18 @@
   align-self: stretch;
   max-width: 100%;
 }
+
 .metodo-image,
 .metodo-image-3 {
   max-width: 80%;
 }
 .float-right {
   float: right;
+}
+@media (max-width: 991px) {
+  .float-right {
+    display: none;
+  }
 }
 .space {
   margin-top: 150px;

@@ -25,7 +25,7 @@
 
 .nos-section {
   gap: 20px;
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -85,7 +85,7 @@
 }
 
 .nos-link {
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   margin-top: 24px;
   gap: 8px;
@@ -123,7 +123,7 @@
   aspect-ratio: 1;
   object-fit: contain;
   object-position: center;
-  max-width: 100%;
+  max-width: 99%;
   height: auto;
   overflow: hidden;
 }

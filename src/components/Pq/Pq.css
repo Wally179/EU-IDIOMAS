@@ -54,7 +54,7 @@
 }
 
 .content-wrapperPQ {
-  align-items: start;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   margin: auto 0;
@@ -136,7 +136,7 @@
 @media (max-width: 991px) {
   .content-column2PQ {
     width: 100%;
-    padding: 71px 40px 71px 40px;
+    padding: 71px 10px 71px 10px;
   }
 }
 .sub-sectionPQ {

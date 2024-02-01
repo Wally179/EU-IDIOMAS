@@ -1,15 +1,13 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/alt-text */
-import Intro from "../../components/intro/Intro.js";
-import Metodo from "../../components/metodo/metodo.js";
-import Navbar from "../../components/navbar/navbar.js";
+import React from "react";
 import Pq from "../../components/Pq/Pq.js";
 import SobreNos from "../../components/sobreNos/sobreNos.js";
+import Metodo from "../../components/metodo/metodo.js";
+import Intro from "../../components/intro/Intro.js";
+import Traduzir from "../Traduzir/Traduzir.js";
 
 function Inicio() {
   return (
-    <div>
-      <Navbar />
+    <div id="Inicio">
       <Intro />
       <Pq />
       <SobreNos />

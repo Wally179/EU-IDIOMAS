@@ -14,7 +14,7 @@
 }
 
 .backgroundI {
-  background-color: var(--Azul-primrio, #14213d);
+  background-color: var(--Azul-primrio, #14213d) !important;
   background: url("../../img/textura.png") repeat;
   background-size: cover;
   display: flex;
@@ -86,8 +86,14 @@
 
 .contactI {
   margin-top: 16px;
+  transition: margin-top 0.3s ease;
+
   @media (max-width: 991px) {
     margin-top: 50px;
+  }
+
+  &:hover {
+    margin-top: 20px; /* Ajuste a altura desejada ao passar o mouse */
   }
 }
 
@@ -103,6 +109,7 @@
   align-items: center;
   gap: 8px;
   white-space: nowrap;
+  transition: background-color 0.3s ease;
 
   @media (max-width: 991px) {
     white-space: initial;
@@ -110,6 +117,10 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &:hover {
+    background-color: transparent;
   }
 }
 

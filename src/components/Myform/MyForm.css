@@ -1,0 +1,48 @@
+/* MyForm.css */
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 519px; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centralizar o formulário na página */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--Cinza-escuro-texto, #171219);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 22.4px */
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4.935px;
+  border: 0.823px solid var(--Blue-Gray-300, #cbd5e1);
+  background: var(--White, #fff);
+}
+
+/* Estilo específico para o campo de anexo de arquivo */
+input[type="file"] {
+  border: none; /* Remover borda apenas para o campo de anexo de arquivo */
+}
+
+button {
+  background: var(--Amarelo, #fca311);
+  box-shadow: 0px 4px 4px 0px rgba(67, 67, 67, 0.25);
+  display: flex;
+  width: 100%;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  cursor: pointer;
+}

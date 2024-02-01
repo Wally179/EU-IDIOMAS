@@ -2,6 +2,20 @@ import React from "react";
 import "./styles.css";
 import mosaico from "../../img/mosaico.png";
 
+export const scrollToSobreNos = () => {
+  const nosContent = document.querySelector(".nos-content");
+  if (nosContent) {
+    const offset = -90;
+    const targetPosition =
+      nosContent.getBoundingClientRect().top + window.scrollY + offset;
+
+    window.scroll({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+  }
+};
+
 function SobreNos() {
   return (
     <div className="nos-container">
