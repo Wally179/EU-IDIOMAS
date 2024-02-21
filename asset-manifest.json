@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/EU-IDIOMAS/static/css/main.de2a916e.css",
-    "main.js": "/EU-IDIOMAS/static/js/main.49b01d58.js",
-    "static/media/FundoElaine.svg": "/EU-IDIOMAS/static/media/FundoElaine.a85459c770a7ea2b1a2e4691aafc89a4.svg",
-    "static/media/FundoQuemSomos.svg": "/EU-IDIOMAS/static/media/FundoQuemSomos.fd49bc72cd474acd875f40658e801d0a.svg",
-    "static/media/FundoUlly.svg": "/EU-IDIOMAS/static/media/FundoUlly.bb8ceb5ef5bb9f95694e791d5d6a66d3.svg",
-    "static/media/metodo.jpeg": "/EU-IDIOMAS/static/media/metodo.8d3801f2018a5eec87ea.jpeg",
-    "static/media/MosaicoEU.svg": "/EU-IDIOMAS/static/media/MosaicoEU.3dff84e3f57146d7d6644958fccb58cf.svg",
-    "static/media/mosaico.png": "/EU-IDIOMAS/static/media/mosaico.8c7d90921be85aa987e5.png",
-    "static/media/education.jpeg": "/EU-IDIOMAS/static/media/education.fbbad88b15c177f84619.jpeg",
-    "static/media/textura.png": "/EU-IDIOMAS/static/media/textura.d145b7741ef63eece344.png",
-    "static/media/Asset3.svg": "/EU-IDIOMAS/static/media/Asset3.3da111110a9a3f5a13654382709c7c87.svg",
-    "static/media/whatsapp.svg": "/EU-IDIOMAS/static/media/whatsapp.9cd26c8ae820ca6531124f93ebe967eb.svg",
-    "index.html": "/EU-IDIOMAS/index.html",
-    "main.de2a916e.css.map": "/EU-IDIOMAS/static/css/main.de2a916e.css.map",
-    "main.49b01d58.js.map": "/EU-IDIOMAS/static/js/main.49b01d58.js.map"
+    "main.css": "/static/css/main.f470c84b.css",
+    "main.js": "/static/js/main.2d461e6a.js",
+    "static/media/FundoElaine.svg": "/static/media/FundoElaine.a85459c770a7ea2b1a2e4691aafc89a4.svg",
+    "static/media/FundoQuemSomos.svg": "/static/media/FundoQuemSomos.fd49bc72cd474acd875f40658e801d0a.svg",
+    "static/media/FundoUlly.svg": "/static/media/FundoUlly.bb8ceb5ef5bb9f95694e791d5d6a66d3.svg",
+    "static/media/metodo.jpeg": "/static/media/metodo.8d3801f2018a5eec87ea.jpeg",
+    "static/media/MosaicoEU.svg": "/static/media/MosaicoEU.3dff84e3f57146d7d6644958fccb58cf.svg",
+    "static/media/mosaico.png": "/static/media/mosaico.8c7d90921be85aa987e5.png",
+    "static/media/education.jpeg": "/static/media/education.fbbad88b15c177f84619.jpeg",
+    "static/media/textura.png": "/static/media/textura.d145b7741ef63eece344.png",
+    "static/media/Asset3.svg": "/static/media/Asset3.3da111110a9a3f5a13654382709c7c87.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.9cd26c8ae820ca6531124f93ebe967eb.svg",
+    "index.html": "/index.html",
+    "main.f470c84b.css.map": "/static/css/main.f470c84b.css.map",
+    "main.2d461e6a.js.map": "/static/js/main.2d461e6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.de2a916e.css",
-    "static/js/main.49b01d58.js"
+    "static/css/main.f470c84b.css",
+    "static/js/main.2d461e6a.js"
   ]
 }
