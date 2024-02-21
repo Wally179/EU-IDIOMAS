@@ -22,7 +22,7 @@ root.render(
         <ToastContainer />
         <NavBar />
         <Switch>
-          <Route exact path="/" component={Inicio} />
+          <Route exact path="/EU-IDIOMAS" component={Inicio} />
           <Route path="/traduzir" component={Traduzir} />
           <Route path="/metodo" component={Metodologia} />
           <Route path="/QuemSomos" component={QuemSomos} />
