@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pq.css";
-import imagem1 from "../../img/pc.png";
+import imagem1 from "../../img/education.jpeg";
 
 export const scrollToMainContainer = () => {
   const mainContainer = document.querySelector(".main-containerPQ");

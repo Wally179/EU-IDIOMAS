@@ -1,17 +1,20 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
-import logo from "../../img/Asset3.png";
+import logo from "../../img/Asset3.svg";
 import "./navbar.css";
 import { scrollToMainContainer } from "../Pq/Pq";
 import { scrollToSobreNos } from "../sobreNos/sobreNos";
 import { scrollToAula, scrollToTradu } from "../metodo/metodo";
+import { scrollToDepoimentos } from "../depoimentos/Depoimentos";
 
 function NavBar() {
   const { pathname } = useLocation();
 
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
   };
 
   return (
@@ -20,7 +23,10 @@ function NavBar() {
         <Navbar.Brand as={Link} to="/" onClick={scrollToTop}>
           <img src={logo} alt="" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav " />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="custom-toggler"
+        />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
             <Nav.Link as={Link} to="/" onClick={scrollToTop} className="S20px">
@@ -42,14 +48,29 @@ function NavBar() {
               id="basic-nav-dropdown"
               onClick={scrollToSobreNos}
             >
-              <NavDropdown.Item className="text-style">
+              <NavDropdown.Item
+                className="text-style"
+                as={Link}
+                to="/QuemSomos"
+                onClick={scrollToTop}
+              >
                 PARCERIA
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#ULLY" className="text-style">
+              <NavDropdown.Item
+                as={Link}
+                to="/Ully"
+                onClick={scrollToTop}
+                className="text-style"
+              >
                 ULLY
               </NavDropdown.Item>
-              <NavDropdown.Item href="#ELAINE" className="text-style">
+              <NavDropdown.Item
+                as={Link}
+                to="/Elaine"
+                onClick={scrollToTop}
+                className="text-style"
+              >
                 ELAINE
               </NavDropdown.Item>
             </NavDropdown>
@@ -59,14 +80,21 @@ function NavBar() {
               className="S20px"
               onClick={scrollToAula}
             >
-              <NavDropdown.Item className="text-style">
+              <NavDropdown.Item
+                as={Link}
+                to="/metodo"
+                onClick={scrollToTop}
+                className="text-style"
+              >
                 METODOLOGIA
               </NavDropdown.Item>
-              <NavDropdown.Item className="text-style">
-                PACOTES
-              </NavDropdown.Item>
-              <NavDropdown.Item className="text-style">
-                MATERIAIS UTILIZADOS
+              <NavDropdown.Item
+                className="text-style"
+                as={Link}
+                to="/Planos"
+                onClick={scrollToTop}
+              >
+                PLANOS
               </NavDropdown.Item>
             </NavDropdown>
             {pathname === "/" && (
@@ -77,6 +105,16 @@ function NavBar() {
                 className="S20px"
               >
                 TRADUÇÕES
+              </Nav.Link>
+            )}{" "}
+            {pathname === "/" && (
+              <Nav.Link
+                as={Link}
+                to="/"
+                onClick={scrollToDepoimentos}
+                className="S20px"
+              >
+                DEPOIMENTOS
               </Nav.Link>
             )}
           </Nav>

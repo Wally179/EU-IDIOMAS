@@ -78,12 +78,12 @@ body {
   color: var(--Cinza-escuro-texto, #171219);
   align-self: stretch;
   margin-top: 24px;
-  font: 300 20px/24px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 300 17px/19px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 @media (max-width: 991px) {
   .pagTradu-description {
-    font: 300 18px/24px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
+    font: 300 16px/18px Gilroy, -apple-system, Roboto, Helvetica, sans-serif;
     max-width: 100%;
   }
 }

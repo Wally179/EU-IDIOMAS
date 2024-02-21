@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import mosaico from "../../img/mosaico.png";
+import { Link, useHistory } from "react-router-dom";
 
 export const scrollToSobreNos = () => {
   const nosContent = document.querySelector(".nos-content");
@@ -17,6 +18,14 @@ export const scrollToSobreNos = () => {
 };
 
 function SobreNos() {
+  const history = useHistory();
+  const handleLinkClick = () => {
+    history.push("/QuemSomos");
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+
   return (
     <div className="nos-container">
       <div className="nos-content">
@@ -24,21 +33,29 @@ function SobreNos() {
           <span className="nos-section">
             <div className="nos-title">Sobre nós</div>
             <div className="nos-description">
-              Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus. Maecenas eget condimentum velit, sit amet
-              feugiat lectus. Class aptent taciti sociosqu ad litora torquent
-              per conubia nostra, per inceptos himenaeos. <br />
+              Somos professoras qualificadas e experientes no ensino presencial
+              e a distancia. Já qualificamos centenas de alunos para adquirirem
+              sua acreditação ESOL, CELTA, TESOL e ICAO, entre outros exames.
             </div>
-            <span className="nos-link">
-              <div className="nos-link-text">Saiba mais</div>
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/df1f1a98e7154374d65da57a3becfcb54f3631a7c3b10b36480f82a1820f5959?apiKey=575e1c58e30d4d41a45d500f16151431&"
-                className="nos-image"
-              />
-            </span>
+            <div className="nos-description2">
+              Temos um compromisso especial com cada um de nossos alunos e
+              preparamos suas classes de acordo com seus interesses e áreas de
+              especialização...
+            </div>
+            <Link
+              to="/QuemSomos"
+              className="metodo-cta"
+              onClick={handleLinkClick}
+            >
+              <span className="nos-link">
+                <div className="nos-link-text">Saiba mais</div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/df1f1a98e7154374d65da57a3becfcb54f3631a7c3b10b36480f82a1820f5959?apiKey=575e1c58e30d4d41a45d500f16151431&"
+                  className="nos-image"
+                />
+              </span>
+            </Link>
           </span>
         </div>
         <div className="nos-column nos-column-image">

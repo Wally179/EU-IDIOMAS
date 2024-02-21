@@ -1,0 +1,44 @@
+.imagesQS {
+  position: relative;
+  padding: 140px 0px 100px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 47%;
+  max-width: 600px;
+
+  @media (max-width: 991px) {
+    width: 100%;
+    padding: 100px 0px 90px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.imageQS,
+.image2QS {
+  width: 45%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .imageQS,
+  .image2QS {
+    width: 173px;
+  }
+  .imageQS {
+    margin-left: -40px;
+  }
+  .imgUlly {
+    width: 100%;
+  }
+}
+
+.image2QS {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+}
+.imgUlly {
+  width: 60%;
+}

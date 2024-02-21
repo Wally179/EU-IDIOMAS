@@ -45,4 +45,9 @@ button {
   gap: 8px;
   color: white;
   cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: rgba(252, 163, 17, 0.5);
 }

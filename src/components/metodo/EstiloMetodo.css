@@ -47,7 +47,6 @@
   .metodo-grid {
     flex-direction: column;
     align-items: stretch;
-
     gap: 0px;
   }
 }
@@ -129,8 +128,14 @@
     white-space: initial;
   }
   .metodo-image {
+    display: none;
+  }
+  .metodo-imageMobile {
+    display: flex;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -148,6 +153,9 @@
 .metodo-image-3 {
   max-width: 80%;
 }
+.metodo-imageMobile {
+  display: none;
+}
 .float-right {
   float: right;
 }
@@ -158,4 +166,9 @@
 }
 .space {
   margin-top: 150px;
+}
+@media (max-width: 991px) {
+  .space {
+    margin-top: 46px;
+  }
 }

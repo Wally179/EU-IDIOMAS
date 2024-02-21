@@ -112,8 +112,9 @@
 }
 .imagePQ {
   width: 472px;
-  height: auto;
-
+  height: 436.79px;
+  object-fit: cover;
+  object-position: center;
   margin-top: 40px;
 }
 @media (max-width: 991px) {

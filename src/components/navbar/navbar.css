@@ -10,19 +10,7 @@
   text-transform: uppercase;
   color: #fff;
 }
-
-.S20px {
-  margin-right: 15px;
-}
-.bg-body-scroll {
-  background-color: var(--Azul-primrio, #ffffff) !important;
-  background: url("../../img/textura.png") repeat;
-  background-size: cover;
-  margin-top: -2px;
-}
-.text-style-black {
-  font-size: 14px;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #171219;
+.custom-toggler {
+  width: 40px !important; /* Ajuste esse valor conforme necessário */
+  height: 40px !important; /* Ajuste esse valor conforme necessário */
 }

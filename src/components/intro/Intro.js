@@ -7,14 +7,10 @@ const Intro = forwardRef((props, ref) => {
       <div className="backgroundI">
         <div className="contentI">
           <div className="textI">
-            <div className="titleI">
-              Dorem ipsum dolor sit amet, porém elus a elit.
-            </div>
+            <div className="titleI">Ingês com EU Idiomas. </div>
             <div className="descriptionI">
-              Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos.
+              Este é um site de captação de cliente para as profissionais
+              independentes Elaine Cristina Nicolodelli e Ully Emeli Schulze.
             </div>
             <div className="contactI">
               <button type="button" className="buttonI">
