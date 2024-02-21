@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EU-IDIOMAS/static/css/main.de2a916e.css",
-    "main.js": "/EU-IDIOMAS/static/js/main.71c8b949.js",
+    "main.js": "/EU-IDIOMAS/static/js/main.49b01d58.js",
     "static/media/FundoElaine.svg": "/EU-IDIOMAS/static/media/FundoElaine.a85459c770a7ea2b1a2e4691aafc89a4.svg",
     "static/media/FundoQuemSomos.svg": "/EU-IDIOMAS/static/media/FundoQuemSomos.fd49bc72cd474acd875f40658e801d0a.svg",
     "static/media/FundoUlly.svg": "/EU-IDIOMAS/static/media/FundoUlly.bb8ceb5ef5bb9f95694e791d5d6a66d3.svg",
@@ -14,10 +14,10 @@
     "static/media/whatsapp.svg": "/EU-IDIOMAS/static/media/whatsapp.9cd26c8ae820ca6531124f93ebe967eb.svg",
     "index.html": "/EU-IDIOMAS/index.html",
     "main.de2a916e.css.map": "/EU-IDIOMAS/static/css/main.de2a916e.css.map",
-    "main.71c8b949.js.map": "/EU-IDIOMAS/static/js/main.71c8b949.js.map"
+    "main.49b01d58.js.map": "/EU-IDIOMAS/static/js/main.49b01d58.js.map"
   },
   "entrypoints": [
     "static/css/main.de2a916e.css",
-    "static/js/main.71c8b949.js"
+    "static/js/main.49b01d58.js"
   ]
 }
