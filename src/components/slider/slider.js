@@ -4,27 +4,31 @@ function Slider() {
   const [data, setData] = useState({
     descrip: "",
     nome: "",
+    img: "",
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Simulando 3 valores na array
   const dataArray = [
     {
-      descrip: "Excelente curso, aprendi muito em pouco tempo!",
-      nome: "Ana Silva",
+      descrip:
+        "“Sempre tive um bloqueio com o Inglês, e fazer as aulas individualmente com a Ully foi perfeito para que eu desenvolvesse segurança, pois ela permitiu que eu evoluísse ao meu ritmo e não tivesse vergonha de errar, as aulas sempre foram direcionadas para a minha área de trabalho, com temas do meu interesse. Com 1 ano de aulas, eu saí do 'extremo básico' para a capacidade de participar e conduzir reuniões em inglês e pretendo evoluir cada vez mais.”",
+      nome: "Yasmin",
+      img: "https://i.imgur.com/xQ4KjHL.png", // Add image URL for Yasmin
     },
     {
       descrip:
-        "Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! Os professores são incríveis, recomendo a todos! ",
-      nome: "Carlos Oliveira",
+        "“Eu faço aulas de inglês com a Nani há cerca de 2 anos. Lembro de que quando começamos as aulas, não conseguia conversar em inglês por mais de 10 minutos e, ainda assim, com muita dificuldade! Hoje, graças às aulas, ganhei a confiança para viajar para países estrangeiros, sem nenhum problema para me comunicar em inglês, algo que nunca tinha imaginado ser possível antes das aulas. Este simples depoimento não será capaz de expressar o quão significativas são suas aulas. Aprender com ela é divertido, leve e extremamente proveitoso! Sou imensamente grata pela oportunidade de ser aluna dela e recomendaria, sem sombra de dúvidas, as suas aulas de inglês para qualquer pessoa que esteja buscando uma experiência de aprendizado enriquecedora.”",
+      nome: "Sabrina",
+      img: "https://i.imgur.com/Y05YHck.png", // Add image URL for Sabrina
     },
     {
-      descrip: "O curso me ajudou a ganhar confiança no meu inglês.",
-      nome: "Juliana Santos",
+      descrip:
+        "“Adoro praticar inglês com a Ully Schulze, porque conversamos em inglês sobre as mais diversas atualidades, que me mantêm atualizado e, ao mesmo tempo, ajuda a manter a fluência na língua inglesa. Uma hora de curso passa muito rápido e fico ansioso pela próxima aula para continuarmos aprendendo e evoluindo a fluência na língua inglesa. Super indico essa excelente profissional que hoje chamo de amiga.”",
+      nome: "Vitor Longen",
+      img: "https://i.imgur.com/R0T1Th3.png", // Add image URL for Sabrina
     },
   ];
-
   useEffect(() => {
     setData(dataArray[currentIndex]);
 
@@ -53,7 +57,7 @@ function Slider() {
         <div className="div-3">
           <div className="div-4">
             <div className="div-5">{data.descrip}</div>
-            <div className="div-6" />
+            <img src={data.img} alt="Foto do aluno" className="div-6" />
             <div className="div-7">{data.nome}</div>
           </div>
         </div>

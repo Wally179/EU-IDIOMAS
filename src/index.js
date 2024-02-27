@@ -12,7 +12,8 @@ import Elaine from "./pages/Elaine/Elaine";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Planos from "./pages/Planos/Planos";
-
+import "./App.css";
+import Material from "./pages/Material/Material";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -30,6 +31,7 @@ root.render(
           <Route path="/Ully" component={Ully} />
           <Route path="/Elaine" component={Elaine} />
           <Route path="/Planos" component={Planos} />
+          <Route path="/Material_Utilizado" component={Material} />
         </Switch>
         <Footer />
       </div>

@@ -14,18 +14,37 @@ function Traduzir(props) {
           />
           <div className="pagTradu-content">
             <div className="pagTradu-text">
-              <div className="pagTradu-title">Lorem ipsum dolor sit amet</div>
+              <div className="pagTradu-title">Tradução</div>
               <div className="pagTradu-description">
-                Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-                metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-                interdum tellus elit sed risus. Maecenas eget condimentum velit,
-                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
-                torquent per conubia nostra, per inceptos himenaeos. Praesent
-                auctor purus luctus enim egestas, ac scelerisque ante pulvinar.
-                Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor
-                urna. Curabitur vel bibendum lorem. Morbi convallis convallis
-                diam sit amet lacinia. Aliquam in elementum tellus.
+                Apesar das diversas ferramentas digitais usadas para a tradução
+                espontânea existentes no mercado nos dias de hoje, temos
+                evidências de que elas na maioria das vezes, não fazem um
+                trabalho fidedigno, ou seja, não correspondem exatamente ao
+                texto falado ou escrito.
+                <br />
+                <br />
+                As variações linguísticas que um texto pode apresentar devem ser
+                levadas em consideração a todo momento. E é por isso que estamos
+                aqui, para lhes ajudar e fazer com que os seus discursos,
+                documentos ou interações tenham a mesma intensidade que teriam
+                no seu próprio idioma. Não tenha medo de falar ou se expressar
+                por escrito. Estamos aqui para lhe dar todo o suporte necessário
+                para o seu sucesso.
+                <br />
+                <br />
+                Para solicitar um orçamento de tradução, preencha o formulário e
+                solicite uma estimativa, sem custo e sem compromisso. Basta
+                preencher o formulário ao lado e no corpo da mensagem colocar o
+                link do drive do arquivo. Caso prefira nos mandar o documento
+                diretamente, e não o link, basta entrar em contato conosco
+                através do e-mail euidiomas.traducoes@gmail.com. Lhe
+                retornaremos o mais breve possível.
+                <br />
+                <br />
+                Importante: Todo e qualquer arquivo ou documento compartilhado
+                ou enviado para orçamento, será eliminado por EU Idiomas ao
+                término do trabalho. Prezamos o sigilo e a segurança dos
+                materiais enviados por nossos clientes.
               </div>
             </div>
             <div className="pagTradu-form">

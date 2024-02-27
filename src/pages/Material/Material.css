@@ -1,0 +1,128 @@
+.infoMaterial {
+  background-color: var(--Amarelo, #fca311);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--Fundo, #f5fbff);
+  width: fit-content;
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 16px;
+  font: 800 16px/120% "Gilroy", -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 84px;
+}
+
+.mat-column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 30%;
+  padding-left: 15px;
+}
+@media (max-width: 991px) {
+  .mat-column {
+    width: 100%;
+  }
+  .infoMaterial {
+    margin-bottom: 8px;
+  }
+}
+
+.mat-column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .mat-column-2 {
+    width: 100%;
+  }
+}
+
+.mat-column-3 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 30%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .mat-column-3 {
+    width: 100%;
+  }
+}
+.Material-Content {
+  width: 100%;
+}
+.Material-conteiner {
+  background-color: #fff;
+  align-self: center;
+  z-index: 1;
+  width: 85%;
+  max-width: 100%;
+  margin: -198px 0 30px;
+  padding: 43px 0px 43px 0px;
+  flex-direction: row;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  .Material-conteiner {
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+.mat-img,
+.mat-img-1,
+.mat-img-2 {
+  aspect-ratio: 0.92;
+  object-fit: auto;
+  object-position: center;
+  width: 25%;
+  max-width: 25%;
+  flex-grow: 1;
+  margin-top: 60px;
+}
+.mat-img {
+  transform: rotate(15deg);
+}
+.mat-img-1 {
+  transform: rotate(-15deg);
+}
+.mat-img-2 {
+  margin-top: -100px;
+  transform: rotate(0deg);
+}
+@media (max-width: 991px) {
+  .mat-img,
+  .mat-img-1,
+  .mat-img-2 {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 16px;
+    transform: rotate(0deg);
+  }
+}
+
+.mat-div {
+  padding: 0;
+}
+
+.mat-div-2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 991px) {
+  .mat-div-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+}

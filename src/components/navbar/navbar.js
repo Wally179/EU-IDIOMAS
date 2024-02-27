@@ -95,6 +95,14 @@ function NavBar() {
                 onClick={scrollToTop}
               >
                 PLANOS
+              </NavDropdown.Item>{" "}
+              <NavDropdown.Item
+                className="text-style"
+                as={Link}
+                to="/Material_Utilizado"
+                onClick={scrollToTop}
+              >
+                Material Utilizado
               </NavDropdown.Item>
             </NavDropdown>
             {pathname === "/" && (

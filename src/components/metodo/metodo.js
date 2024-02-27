@@ -95,13 +95,13 @@ function Metodo() {
               <div className="metodo-text-container">
                 <div className="metodo-heading ">Traduções</div>
                 <div className="metodo-description">
-                  Torem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                  eu turpis molestie, dictum est a, mattis tellus. Sed
-                  dignissim, metus nec fringilla accumsan, risus sem
-                  sollicitudin lacus, ut interdum tellus elit sed risus.
-                  Maecenas eget condimentum velit, sit amet feugiat lectus.
-                  Class aptent taciti sociosqu ad litora torquent per conubia
-                  nostra, per inceptos himenaeos. <br />
+                  Apesar das diversas ferramentas digitais usadas para a
+                  tradução espontânea existentes no mercado nos dias de hoje,
+                  temos evidências de que elas na maioria das vezes, não fazem
+                  um trabalho fidedigno, ou seja, não correspondem exatamente ao
+                  texto falado ou escrito. As variações linguísticas que um
+                  texto pode apresenta...
+                  <br />
                 </div>
                 <Link
                   to="/traduzir"
