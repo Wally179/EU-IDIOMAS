@@ -1,34 +1,56 @@
-import * as React from "react";
+import React, { useState } from "react";
 import "./Planos.css";
 import fundo from "../../img/FundoElaine.svg";
 import whats from "../../img/whatsapp.svg";
+import ModalContato from "../../components/modal/modal";
 
 function Planos(props) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <>
       <div className="pagTradu-container">
         <div className="pagTradu-header">
           <img loading="lazy" className="pagTradu-image" src={fundo} />
           <div className="pagTradu-content">
+            <ModalContato isOpen={modalOpen} onClose={closeModal} />
             <div className="Planos-Content">
               <div className="planos-title">Conheça nossos planos!</div>
               <div className="planos-description">
                 Nossos preços são baseados no seu país de residência. Entre em
                 contato e solicite um orçamento.
               </div>
+
               <div className="planos">
+                <div className="infoMaterial">
+                  Sujeito a disponibilidade de horários.
+                </div>
                 <div className="planos-container">
                   <div className="planos1">
                     <div className="plano-titulo">Crew - Inglês geral</div>
                     <div className="plano-descri">Aulas em grupo</div>
-                    <div className="CTA-planos">
-                      <img
-                        loading="lazy"
-                        src={whats}
-                        className="CTA-planos-img"
-                      />
-                      <div className="CTA-text-planos">Entrar em contato</div>
-                    </div>
+                    <a
+                      href="https://wa.me/554788269124?text=Ol%C3%A1%21+Estou+interessado%28a%29+nos+servi%C3%A7os+disponibilizados+pelo+site%2C+poderias+me+enviar+mais+detalhes%3F"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-link"
+                    >
+                      <div className="CTA-planos">
+                        <img
+                          loading="lazy"
+                          src={whats}
+                          className="CTA-planos-img"
+                        />
+                        <div className="CTA-text-planos">Entrar em contato</div>
+                      </div>
+                    </a>
                   </div>
                   <div className="planos2">
                     <div className="divList">
@@ -89,14 +111,21 @@ function Planos(props) {
                   <div className="planos1">
                     <div className="plano-titulo">STAR - Inglês geral</div>
                     <div className="plano-descri">Aulas individuais</div>
-                    <div className="CTA-planos">
-                      <img
-                        loading="lazy"
-                        src={whats}
-                        className="CTA-planos-img"
-                      />
-                      <div className="CTA-text-planos">Entrar em contato</div>
-                    </div>
+                    <a
+                      href="https://wa.me/554788269124?text=Ol%C3%A1%21+Estou+interessado%28a%29+nos+servi%C3%A7os+disponibilizados+pelo+site%2C+poderias+me+enviar+mais+detalhes%3F"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-link"
+                    >
+                      <div className="CTA-planos">
+                        <img
+                          loading="lazy"
+                          src={whats}
+                          className="CTA-planos-img"
+                        />
+                        <div className="CTA-text-planos">Entrar em contato</div>
+                      </div>
+                    </a>
                   </div>
                   <div className="planos2">
                     <div className="divList">
@@ -170,14 +199,21 @@ function Planos(props) {
                     <div className="plano-descri">
                       Aulas de inglês para negócios
                     </div>
-                    <div className="CTA-planos">
-                      <img
-                        loading="lazy"
-                        src={whats}
-                        className="CTA-planos-img"
-                      />
-                      <div className="CTA-text-planos">Entrar em contato</div>
-                    </div>
+                    <a
+                      href="https://wa.me/554788269124?text=Ol%C3%A1%21+Estou+interessado%28a%29+nos+servi%C3%A7os+disponibilizados+pelo+site%2C+poderias+me+enviar+mais+detalhes%3F"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-link"
+                    >
+                      <div className="CTA-planos">
+                        <img
+                          loading="lazy"
+                          src={whats}
+                          className="CTA-planos-img"
+                        />
+                        <div className="CTA-text-planos">Entrar em contato</div>
+                      </div>
+                    </a>
                   </div>
                   <div className="planos2">
                     <div className="divList">

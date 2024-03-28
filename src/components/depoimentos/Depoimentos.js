@@ -17,7 +17,7 @@ export const scrollToDepoimentos = () => {
 
 function Depoimentos() {
   return (
-    <div className="dep-container depoir" style={{ marginBottom: "35px" }}>
+    <div className="dep-container depoir">
       <div className="nos-content">
         <div className="nos-title" style={{ paddingBottom: "22px" }}>
           Depoimentos

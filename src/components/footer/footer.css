@@ -155,6 +155,7 @@
 
 .footer-icons {
   display: flex;
+  cursor: pointer;
   gap: 8px;
 }
 

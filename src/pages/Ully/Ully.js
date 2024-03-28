@@ -22,7 +22,7 @@ function Ully(props) {
                 especialização Financeira em Contabilidade e Fiscalidade. Pós
                 Graduada em Life Coaching, Terapia Cognitivo-Comportamental,
                 Programação Neurolinguística, Coordenação Pedagógica com Ênfase
-                em Gestão de Pessoas e Docencia no Ensino Superior.
+                em Gestão de Pessoas e docência no Ensino Superior.
               </div>
             </div>
             <div className="metodo-form">

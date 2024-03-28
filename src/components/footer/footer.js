@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./footer.css";
 import logo from "../../img/Asset3.svg";
+import ModalContato from "../modal/modal";
 
 function Footer() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div className="footer-container">
+      <ModalContato isOpen={modalOpen} onClose={closeModal} />
+
       <div className="footer-logo-container">
         <img src={logo} alt="logo" className="center" />
       </div>
       <div className="footer-content">
-        <div className="footer-text">2024 - EU Idiomas, aulas e traduções.</div>
+        <div className="footer-text">2024 - EU Idiomas - aulas e traduções</div>
         <div className="footer-icons">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/be2b08027883e139b0631b921582ee1c2809173d319927df4095e019cd926068?apiKey=575e1c58e30d4d41a45d500f16151431&"
             className="footer-icon"
+            onClick={openModal}
           />
           <img
             loading="lazy"

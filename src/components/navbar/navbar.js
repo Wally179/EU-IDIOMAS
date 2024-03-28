@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import logo from "../../img/Asset3.svg";
@@ -7,6 +7,7 @@ import { scrollToMainContainer } from "../Pq/Pq";
 import { scrollToSobreNos } from "../sobreNos/sobreNos";
 import { scrollToAula, scrollToTradu } from "../metodo/metodo";
 import { scrollToDepoimentos } from "../depoimentos/Depoimentos";
+import ModalContato from "../modal/modal";
 
 function NavBar() {
   const { pathname } = useLocation();
@@ -17,11 +18,23 @@ function NavBar() {
     }, 100);
   };
 
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <Navbar expand="lg" className="bg-body" fixed="top" data-bs-theme="dark">
+      <ModalContato isOpen={modalOpen} onClose={closeModal} />
+
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={scrollToTop}>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" className="logo-nav" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -43,7 +56,7 @@ function NavBar() {
               </Nav.Link>
             )}
             <NavDropdown
-              title="SOBRE NOS"
+              title="SOBRE NÓS"
               className="dropdown-title S20px"
               id="basic-nav-dropdown"
               onClick={scrollToSobreNos}
@@ -59,19 +72,19 @@ function NavBar() {
               <NavDropdown.Divider />
               <NavDropdown.Item
                 as={Link}
-                to="/Ully"
-                onClick={scrollToTop}
-                className="text-style"
-              >
-                ULLY
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
                 to="/Elaine"
                 onClick={scrollToTop}
                 className="text-style"
               >
                 ELAINE
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/Ully"
+                onClick={scrollToTop}
+                className="text-style"
+              >
+                ULLY
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown
@@ -95,14 +108,24 @@ function NavBar() {
                 onClick={scrollToTop}
               >
                 PLANOS
-              </NavDropdown.Item>{" "}
+              </NavDropdown.Item>
+              {pathname !== "/" && (
+                <NavDropdown.Item
+                  className="text-style"
+                  as={Link}
+                  to="/traduzir"
+                  onClick={scrollToTop}
+                >
+                  TRADUÇÕES
+                </NavDropdown.Item>
+              )}
               <NavDropdown.Item
                 className="text-style"
                 as={Link}
                 to="/Material_Utilizado"
                 onClick={scrollToTop}
               >
-                Material Utilizado
+                EBOOKS
               </NavDropdown.Item>
             </NavDropdown>
             {pathname === "/" && (
@@ -127,7 +150,7 @@ function NavBar() {
             )}
           </Nav>
 
-          <a href="">
+          <a onClick={openModal} style={{ cursor: "pointer" }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"

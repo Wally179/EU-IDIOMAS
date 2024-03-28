@@ -61,7 +61,7 @@ const MyForm = () => {
     if (validateForm()) {
       emailjs
         .send(
-          "service_h1dnlet",
+          "service_pn82lqm",
           "template_nja37cj",
           formData,
           "c1Xz_QuIfGULVpjj2"

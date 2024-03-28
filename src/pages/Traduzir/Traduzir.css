@@ -33,15 +33,15 @@ body {
   z-index: 1;
   width: 85%;
   max-width: 100%;
-  margin: -198px 0 30px;
-  padding: 43px 64px 43px 64px;
+  margin-top: -198px;
+  padding: 43px 0px 43px 30px;
   flex-direction: row;
   display: flex;
 }
 
 @media (max-width: 991px) {
   .pagTradu-content {
-    padding-left: 20px;
+    padding-left: 0px;
     flex-direction: column;
     align-items: center;
     margin: 0;

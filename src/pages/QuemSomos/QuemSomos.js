@@ -13,7 +13,7 @@ function QuemSomos(props) {
               <div className="pagTradu-title">Quem Somos</div>
               <div className="pagTradu-description">
                 Somos professoras qualificadas e experientes no ensino
-                presencial e a distancia. Já qualificamos centenas de alunos
+                presencial e a distância. Já qualificamos centenas de alunos
                 para adquirirem sua acreditação ESOL, CELTA, TESOL e ICAO, entre
                 outros exames.
               </div>
@@ -25,7 +25,7 @@ function QuemSomos(props) {
               <div className="pagTradu-description">
                 Fazemos traduções para pessoa física ou jurídica, materiais
                 acadêmicos ou jurídicos. Contamos com uma gama de trabalhos em
-                diversas áreas do mercado internacional, assim com trabalhos de
+                diversas áreas do mercado internacional, assim como trabalhos de
                 interpretação.
               </div>
               <div className="pagTradu-description">
@@ -35,8 +35,8 @@ function QuemSomos(props) {
                 estiverem, e em todas as partes do globo.
               </div>
               <div className="pagTradu-description">
-                Temos ensinado individualmente desde 2007, compartindo
-                experiencias profissionais desde 2012 e novamente cruzando
+                Temos ensinado individualmente desde 2007, compartilhando
+                experiências profissionais desde 2012 e novamente cruzando
                 nossos caminhos em 2022, quando nos unimos em projecto nesta
                 website.
               </div>

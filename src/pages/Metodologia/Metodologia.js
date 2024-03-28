@@ -21,14 +21,14 @@ function Metodologia(props) {
                 Com uma incrível variedade de planos de aula, o programa
                 prioriza cenários da vida real e atividades interativas para
                 facilitar a aquisição do idioma. A estrutura do curso integra
-                diversos materiais de aprendizagem, incluindo tarefas on-line,
+                diversos materiais de aprendizagem, incluindo tarefas online,
                 para envolver os alunos no uso autêntico do idioma e em
                 contextos culturais. Ao aproveitar a abordagem comunicativa, a
                 ênfase é colocada no desenvolvimento de habilidades de escuta,
                 fala, leitura e escrita em conjunto, permitindo que os alunos
                 adquiram naturalmente proficiência linguística através de uma
-                comunicação rica em contexto.{" "}
-              </div>{" "}
+                comunicação rica em contexto.
+              </div>
               <div className="pagTradu-description">
                 Para aprimorar a experiência de aprendizagem, o curso incorpora
                 recursos multimídia como flashcards e vídeos. Os flashcards

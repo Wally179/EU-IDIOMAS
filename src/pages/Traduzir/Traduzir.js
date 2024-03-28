@@ -34,8 +34,8 @@ function Traduzir(props) {
                 <br />
                 Para solicitar um orçamento de tradução, preencha o formulário e
                 solicite uma estimativa, sem custo e sem compromisso. Basta
-                preencher o formulário ao lado e no corpo da mensagem colocar o
-                link do drive do arquivo. Caso prefira nos mandar o documento
+                preencher o formulário localizado nesta página colocar o link do
+                drive do arquivo. Caso prefira nos mandar o documento
                 diretamente, e não o link, basta entrar em contato conosco
                 através do e-mail euidiomas.traducoes@gmail.com. Lhe
                 retornaremos o mais breve possível.
